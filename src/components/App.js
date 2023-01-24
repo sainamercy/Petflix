@@ -1,8 +1,9 @@
 import React from "react";
+import Home from "./Home";
 
 function App() {
-    return <div>
-        <h1 className="text-red-500">Home Page</h1>
+    return <div className="w-screen h-screen">
+        <Home />
     </div>
 }
 
