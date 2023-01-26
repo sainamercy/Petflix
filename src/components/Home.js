@@ -13,10 +13,10 @@ function Home() {
       </div>
       <div className="absolute w-full top-0 bg-white/20 flex flex-col items-center justify-evenly h-full">
         <div className="flex flex-col items-center justify-evenly text-gray-100 w-3/5">
-          <h1 className="text-5xl text-cyan-500 font-bold mb-4">
+          <h1 className="text-5xl text-white-500 font-bold mb-4">
             WELCOME TO PETIFY
           </h1>
-         <div  className="text-2xl text-center text-gray-800 mb-4">
+         <div  className="text-2xl text-center text-gray-50 mb-4">
          <p className="mb-4">
           Petify is an organization that is dedicated to providing healthy permanent home for all our animals as well as provide pet lovers with varied selection of pets to adopt.</p>.
 
