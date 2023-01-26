@@ -86,11 +86,11 @@ To run the application, you can use the following steps to run the app.
 # Author
 
 This project was contributed by :
- - Mercy Sania
- - Trevor Febias
- - Simon Sirumba
- - Shuaib Shaban
- - Casey Ochieng
+ - [Mercy Sania](https://github.com/sainamercy)
+ - [Trevor Febias](https://github.com/febiasm)
+ - [Simon Sirumba](https://github.com/Sirumba)
+ - [Shuaib Shaban](https://github.com/ShuaibShaban)
+ - [Casey Ochieng](https://github.com/CaseyOchieng)
 
 
 
