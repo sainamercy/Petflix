@@ -10,26 +10,26 @@ function Home() {
             type="video/mp4"
           />
         </video>
-        {/* <img src="https://giphy.com/gifs/banggood-cat-pets-dacing-xJjs8eGVbjNYY" alt="home-bg" className="w-full h-full"/> */}
       </div>
-      {/* welcome msg */}
-      {/* slogan */}
-      {/* get started button */}
       <div className="absolute w-full top-0 bg-white/20 flex flex-col items-center justify-evenly h-full">
-        <div className="flex flex-col items-center justify-evenly text-gray-200 w-3/5 h-60">
-          <h1 className="text-4xl font-bold">WELCOME TO PETIFY</h1>
-          <p className="text-2xl text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quas
-            hic corporis repellendus quod neque explicabo, atque cupiditate
-            pariatur odit est expedita minus doloremque deleniti laborum qui
-            reiciendis reprehenderit sed.
-          </p>
+        <div className="flex flex-col items-center justify-evenly text-gray-100 w-3/5">
+          <h1 className="text-5xl text-cyan-500 font-bold mb-4">
+            WELCOME TO PETIFY
+          </h1>
+         <div  className="text-2xl text-center text-gray-800 mb-4">
+         <p className="mb-4">
+          Petify is an organization that is dedicated to providing healthy permanent home for all our animals as well as provide pet lovers with varied selection of pets to adopt.</p>.
+
+          <p className="mb-4">For our company to become as we are today, our experts have spent most of their time on various pets research. They also have spent most of their time seeking recommendations, commendations and guidance from various experts when it comes to taking care of pets. We use every possible way that we can to provide the best for our animals to be reciprocated by potential pet owners.</p>
+
+         </div>
+          
           <div className="flex space-x-2 justify-center">
             <button
               type="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
-              class="inline-block px-10 text-1.8xl py-3 bg-cyan-400 text-stone-900 font-medium leading-tight rounded shadow-md hover:bg-rose-300 hover:shadow-lg focus:bg-rose-300 focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              class="inline-block px-10 text-1.8xl py-3 bg-cyan-400 text-gray-800 font-medium leading-tight rounded shadow-md hover:bg-cyan-500 hover:shadow-lg focus:bg-cyan-500 focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
             >
               Get Started
             </button>
