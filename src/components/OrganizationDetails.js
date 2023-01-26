@@ -190,7 +190,7 @@ style={{
              <div className="mb-4">
                <tbody>
                  <tr className=" bg-white border-b w-80">
-                   <div className="mb-5 grid grid-cols-3">
+                   <div className="mb-5 mt-9 grid grid-cols-3">
                      <img
                        className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 h-10"
                        src="https://img.icons8.com/ios-filled/512/calendar.png"
@@ -265,6 +265,27 @@ style={{
            </table>
          </div>
        </div>
+       <div className="">
+         <div className="topmoreInfo p-6 rounded-lg shadow-lg bg-white ">
+           <table className=" ">
+               <tbody>
+                 <tr className="  ">
+                   <div className="  mb-3">
+                     <img
+                       className="rounded-lg"
+                       src="https://www.purina.co.uk/sites/default/files/2020-12/Introducing%20Your%20New%20Cat%20to%20Your%20Other%20PetsHERO.jpg"
+                       alt={organization.name + " logo"}
+                     ></img>
+                      
+                   </div>
+                 </tr>{" "}
+               </tbody>
+             
+              
+           </table>
+         </div>
+       </div>
+       
      </div>
    );
  };
