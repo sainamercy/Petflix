@@ -35,7 +35,7 @@ code {
  position: relative;
  z-index: 10;
  left: 30px;
- bottom: 50px;
+ bottom: 20px;
  right: 0;
 }
 .firstColumn {
@@ -74,4 +74,24 @@ code {
 }
 .detailed-page {
  height: 1250px;
+}
+body{
+ background-color:  #E4E2F1;
+}
+.topmoreInfo{
+  width: 550px;
+  margin-left: 20px;
+  height: 200px;
+  position: relative;
+  z-index: 10;
+  bottom: 1150px;
+  left: 1200px;
+}
+.picture{
+ width: 520px;
+ position: relative;
+ margin-left:0px ;
+ z-index: 12;
+
+  
 }
