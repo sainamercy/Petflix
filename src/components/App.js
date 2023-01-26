@@ -6,6 +6,7 @@ import Home from "./Home";
 import AnimalList from "./AnimalList";
 import Organization from "./OrganizationList";
 import Login from "./Login";
+import OrganizationDetails from "./OrganizationDetails";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/animalList" element={<AnimalList />}></Route>
         <Route path="/organizationList" element={<Organization />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/organizationDetails/:id" element={<OrganizationDetails/>}></Route>
       </Routes>
       {/* <Home /> */}
       <Footer />

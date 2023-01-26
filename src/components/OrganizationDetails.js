@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 
 function OrganizationDetails() {
+  let param = useParams()
+  console.log(param.id);
  const [isLoading, setIsLoading] = useState(true);
  const [organization, setOrganization] = useState([]);
  useEffect(() => {
@@ -291,7 +294,7 @@ style={{
  };
  return (
    <div>
-     <DetailedOrganization organization={organization[6]} />
+     <DetailedOrganization organization={organization[param.id]} />
   </div>
  );
 }
