@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 
 function OrganizationDetails() {
+  let param = useParams()
+  console.log(param.id);
  const [isLoading, setIsLoading] = useState(true);
  const [organization, setOrganization] = useState([]);
  useEffect(() => {
@@ -264,37 +267,15 @@ style={{
              </div>
            </table>
          </div>
-       </div>
-       <div className="">
-         <div className="topmoreInfo p-6 rounded-lg shadow-lg bg-white ">
-           <table className=" ">
-               <tbody>
-                 <tr className="  ">
-                   <div className="  mb-3">
-                     <img
-                       className="rounded-lg"
-                       src="https://www.purina.co.uk/sites/default/files/2020-12/Introducing%20Your%20New%20Cat%20to%20Your%20Other%20PetsHERO.jpg"
-                       alt={organization.name + " logo"}
-                     ></img>
-                      
-                   </div>
-                 </tr>{" "}
-               </tbody>
-             
-              
-           </table>
-         </div>
-       </div>
-       
+       </div> 
      </div>
    );
  };
  return (
    <div>
-     <DetailedOrganization organization={organization[6]} />
+     <DetailedOrganization organization={organization[param.id]} />
   </div>
  );
 }
 export default OrganizationDetails;
-
 
