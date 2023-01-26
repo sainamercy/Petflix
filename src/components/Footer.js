@@ -43,22 +43,22 @@ function Footer() {
               Useful links
             </h6>
             <p className="mb-4">
-              <a href="#!" className="hover:text-cyan-500">
+              <a href="#!" className="hover:text-rose-500">
                 Find A Pet
               </a>
             </p>
             <p className="mb-4">
-              <a href="#!" className="hover:text-cyan-500">
+              <a href="#!" className="hover:text-rose-500">
                 Organizations & Partners
               </a>
             </p>
             <p className="mb-4">
-              <a href="#!" className="hover:text-cyan-500">
+              <a href="#!" className="hover:text-rose-500">
                 Login
               </a>
             </p>
             <p>
-              <a href="#!" className="hover:text-cyan-500">
+              <a href="#!" className="hover:text-rose-500">
                 About
               </a>
             </p>
