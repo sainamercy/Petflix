@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Animal from "./Animal";
 import Search from "./Search";
 import Breeds from "./Breeds";
-
+import AnimalDetails from "./AnimalDetails";
 function AnimalList() {
-  const [animals, setAnimals] = useState([]);
+const [animals, setAnimals] = useState([]);
 
   useEffect(() => {
     fetch("https://api.npoint.io/85a754bf9c1951c51700/animals/")
@@ -35,10 +35,13 @@ function AnimalList() {
                   : "https://thumbs.dreamstime.com/b/vector-group-pets-dog-cat-humming-bird-parrot-rabbit-isolated-white-background-pet-icon-logo-easy-editable-layered-224673941.jpg"
               }
               name={animal.name ? animal.name : "Milo"}
-              species={animal.species}
+              breed={animal.breeds.primary}
             />
           );
         })}
+         <AnimalDetails
+        animals={animals}
+      />
       </div>
     </div>
   );
