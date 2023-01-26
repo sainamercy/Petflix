@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const Organization = () => {
@@ -24,8 +25,8 @@ const Organization = () => {
   }, []);
 
 
-  const OrganizationCard = ({ organization }) => {
-    return (
+  const OrganizationCard = ({ organization, id}) => {
+    return (<Link to={`/organizationDetails/${id}`}>
       <div className="organizationCards cursor-pointer rounded-md p-3 bg-white ring-1 ring-slate-200 shadow-sm hover:bg-gray-200   ">
         <article className="flex items-start space-x-6 p-6">
           {/* { console.log(organization.photos[0].small)} */}
@@ -110,12 +111,13 @@ const Organization = () => {
           </div>
         </article>
       </div>
+      </Link>
     );
   };
   return (
     <div className="MainOrganizationCards cursor-pointer rounded-md p-3 bg-white ring-1 ring-slate-200 ">
       {organization.map((org, index) => (
-        <OrganizationCard key={index} organization={org} />
+        <OrganizationCard key={index} organization={org} id={index}/>
       ))}
     </div>
   );
