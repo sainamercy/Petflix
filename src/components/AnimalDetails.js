@@ -1,6 +1,7 @@
 import React from "react";
 
 function AnimalDetails({animals}) {
+  console.log(animals);
   const {image, name, houseTrained, breed, age, gender, about} = animals
   return <div className="h-full w-full">
     <div className="flex items center h-96 w-3/5 justify-evenly">
