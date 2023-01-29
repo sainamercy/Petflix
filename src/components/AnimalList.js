@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import Animal from "./Animal";
 import Search from "./Search";
 import Breeds from "./Breeds";
-import AnimalDetails from "./AnimalDetails";
+
+
 function AnimalList() {
   const [allAnimals, setAllAnimals] = useState([])
 const [animals, setAnimals] = useState([]);
-
   useEffect(() => {
     fetch("https://api.npoint.io/85a754bf9c1951c51700/animals/")
       .then((response) => response.json())
@@ -16,7 +16,6 @@ const [animals, setAnimals] = useState([]);
         setAnimals(data);
       });
   }, []);
-
   function handleSearch(value){
     console.log(animals);
     const updatedAnimals = allAnimals.filter(animal=> animal.breeds.primary.toLowerCase() === value.toLowerCase())
@@ -33,9 +32,9 @@ const [animals, setAnimals] = useState([]);
   return (
     <div className="bg-gray">
         <div onClick={handleClick} className="flex justify-center">
-        <Breeds breed="Cats" image="https://cdn-icons-png.flaticon.com/512/9358/9358469.png"/>
-        <Breeds breed="Dogs" image="https://cdn-icons-png.flaticon.com/512/9342/9342594.png"/>
-        <Breeds breed="Others" image="https://cdn-icons-png.flaticon.com/512/2609/2609834.png"/>
+        <Breeds key="cats" breed="Cats" image="https://cdn-icons-png.flaticon.com/512/9358/9358469.png"/>
+        <Breeds key="dogs" breed="Dogs" image="https://cdn-icons-png.flaticon.com/512/9342/9342594.png"/>
+        <Breeds key="others" breed="Others" image="https://cdn-icons-png.flaticon.com/512/2609/2609834.png"/>
         </div>
         <Search onSearch={handleSearch}/>
       <div className="flex flex-wrap w-3/4 mx-auto">
@@ -43,8 +42,9 @@ const [animals, setAnimals] = useState([]);
         {animals.map((animal, index) => {
           let imageUrl = animal.primary_photo_cropped?.small;
           return (
-            <Animal
-              key={index}
+            <div>
+              <Animal
+              key={animal.id}
               image={
                 imageUrl
                   ? imageUrl
@@ -52,12 +52,11 @@ const [animals, setAnimals] = useState([]);
               }
               name={animal.name ? animal.name : "Milo"}
               breed={animal.breeds.primary}
+              id={index}
             />
+            </div>
           );
         })}
-         <AnimalDetails
-        animals={allAnimals}
-      />
       </div>
     </div>
   );
