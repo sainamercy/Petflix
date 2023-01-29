@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 function OrganizationDetails() {
   let param = useParams()
+  console.log(param.id);
  const [isLoading, setIsLoading] = useState(true);
  const [organization, setOrganization] = useState([]);
  useEffect(() => {
