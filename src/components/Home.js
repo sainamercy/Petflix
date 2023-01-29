@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -25,7 +26,8 @@ function Home() {
          </div>
           
           <div className="flex space-x-2 justify-center">
-            <button
+           <Link to="/animalList">
+           <button
               type="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
@@ -33,6 +35,7 @@ function Home() {
             >
               Get Started
             </button>
+           </Link>
           </div>
         </div>
       </div>
