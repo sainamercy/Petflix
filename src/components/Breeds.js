@@ -1,6 +1,6 @@
 import React from "react";
 
-function Breeds({breed = "Cats", image} ){
+function Breeds({breed = "Cats", image, onAnimalClick} ){
  function getBreed(){
   if(breed === "Dogs"){
     return "Dog"
@@ -10,7 +10,7 @@ function Breeds({breed = "Cats", image} ){
     return "others"
   }
  }
-    return <div className="flex justify-center p-6 hover:scale-110">
+    return <div className="flex justify-center m-6 hover:scale-110" onClick={onAnimalClick}>
     <div className="rounded-lg shadow-lg bg-white w-28 h-32">
       <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
         <img className="rounded-t-lg h-3/4 w-3/4 m-auto" src={image} alt={getBreed()}/>

@@ -11,30 +11,33 @@ const [animals, setAnimals] = useState([]);
     fetch("https://api.npoint.io/85a754bf9c1951c51700/animals/")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setAllAnimals(data)
         setAnimals(data);
       });
   }, []);
   function handleSearch(value){
-    console.log(animals);
-    const updatedAnimals = allAnimals.filter(animal=> animal.breeds.primary.toLowerCase() === value.toLowerCase())
+    const updatedAnimals = allAnimals.filter(animal=> animal.breeds.primary.toLowerCase().includes(value.toLowerCase()))
     setAnimals(updatedAnimals)
   }
 
   function handleClick(e){
-    console.log(e.target.alt);
-    const updatedAnimals = allAnimals.filter(animal=>animal.type===e.target.alt)
-    setAnimals(updatedAnimals)
+  if (e.target.alt){
+    if(e.target.alt === "others"){
+      setAnimals(allAnimals)
+    }else{
+      const updatedAnimals = allAnimals.filter(animal=>animal.type===e.target.alt)
+      setAnimals(updatedAnimals)
+    } 
+  }
   }
 
   
   return (
     <div className="bg-gray">
-        <div onClick={handleClick} className="flex justify-center">
-        <Breeds key="cats" breed="Cats" image="https://cdn-icons-png.flaticon.com/512/9358/9358469.png"/>
-        <Breeds key="dogs" breed="Dogs" image="https://cdn-icons-png.flaticon.com/512/9342/9342594.png"/>
-        <Breeds key="others" breed="Others" image="https://cdn-icons-png.flaticon.com/512/2609/2609834.png"/>
+        <div className="flex justify-center">
+        <Breeds onAnimalClick={handleClick}  key="cats" breed="Cats" image="https://cdn-icons-png.flaticon.com/512/9358/9358469.png"/>
+        <Breeds onAnimalClick={handleClick}   key="dogs" breed="Dogs" image="https://cdn-icons-png.flaticon.com/512/9342/9342594.png"/>
+        <Breeds onAnimalClick={handleClick}  key="others" breed="Others" image="https://cdn-icons-png.flaticon.com/512/2609/2609834.png"/>
         </div>
         <Search onSearch={handleSearch}/>
       <div className="flex flex-wrap w-3/4 mx-auto">
