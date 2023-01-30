@@ -27,8 +27,8 @@ function OrganizationDetails() {
  const DetailedOrganization = ({ organization }) => {
    return (
      <div className="detailed-page">
-       <div className="individualCards block p-6 rounded-lg shadow-lg bg-white ">
-         <div className="grid grid-cols-3 flex items-center">
+       <div className="individualCards block p-6 rounded-lg shadow-lg bg-white">
+         <div className="grid grid-cols-3 items-center">
            <div className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 mb-11 ml-9 ">
              {organization.photos.length > 0 ? (
                <img
@@ -62,7 +62,7 @@ function OrganizationDetails() {
              <div className="mb-4">
                <tbody>
                  <tr className=" bg-white border-b w-80">
-                   <div className="mb-5 grid grid-cols-3  gap--2 flex items-center">
+                   <div className="mb-5 grid grid-cols-3  gap--2 items-center">
                      <img
                        className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 h-14"
                        src="https://img.icons8.com/ios-filled/512/google-maps.png"
@@ -83,7 +83,7 @@ function OrganizationDetails() {
 <tr>
                  <th
                    scope="col"
-                   className="text-3xl font-bold mb-6 bg-white text-sm font-medium  "
+                   className="text-3xl font-bold mb-6 bg-white"
                  >
                    <img
                      src="https://thumbs.dreamstime.com/b/vector-group-pets-dog-cat-humming-bird-parrot-rabbit-isolated-white-background-pet-icon-logo-easy-editable-layered-224673941.jpg"
@@ -98,7 +98,7 @@ function OrganizationDetails() {
              <div className="mb-4">
                <tbody>
                  <tr className=" bg-white border-b w-80">
-                   <div className="mb-5 grid grid-cols-2  gap-2 flex items-center">
+                   <div className="mb-5 grid grid-cols-2  gap-2 items-center">
                      <img
                        className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 h-10"
                        src="https://img.icons8.com/ios-filled/512/gmail-new.png"
@@ -114,13 +114,13 @@ function OrganizationDetails() {
 
                <tbody>
  <tr className=" bg-white border-b w-80">
-                   <div className="mb-5 grid grid-cols-2  gap-2 flex items-center">
+                   <div className="mb-5 grid grid-cols-2  gap-2 items-center">
                      <img
                        className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 h-10"
                        src="https://img.icons8.com/ios-filled/512/online-support.png"
                        alt={organization.name + " logo"}
                      ></img>
-                     <td className=" px-6 py-4 whitespace-nowrap text-sm font-medium text-xl">
+                     <td className=" px-6 py-4 whitespace-nowrap text-sm font-medium">
                        {" "}
                        {organization.phone
                          ? organization.phone
