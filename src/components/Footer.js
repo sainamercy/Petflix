@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -43,24 +44,24 @@ function Footer() {
               Useful links
             </h6>
             <p className="mb-4">
-              <a href="#!" className="hover:text-rose-500">
+              <Link to="/animalList" className="hover:text-rose-500">
                 Find A Pet
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="hover:text-rose-500">
+              <Link to="/organizationList" className="hover:text-rose-500">
                 Organizations & Partners
-              </a>
+              </Link>
             </p>
             <p className="mb-4">
-              <a href="#!" className="hover:text-rose-500">
+              <Link to="/login" className="hover:text-rose-500">
                 Login
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#!" className="hover:text-rose-500">
+              <Link to="/" className="hover:text-rose-500">
                 About
-              </a>
+              </Link>
             </p>
           </div>
           <div className="">
