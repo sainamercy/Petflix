@@ -33,7 +33,7 @@ const [animals, setAnimals] = useState([]);
 
   
   return (
-    <div className="bg-gray h-full">
+    <div className="bg-gray">
         <div className="flex justify-center">
         <Breeds onAnimalClick={handleClick}  key="cats" breed="Cats" image="https://cdn-icons-png.flaticon.com/512/9358/9358469.png"/>
         <Breeds onAnimalClick={handleClick}   key="dogs" breed="Dogs" image="https://cdn-icons-png.flaticon.com/512/9342/9342594.png"/>
