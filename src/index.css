@@ -14,13 +14,13 @@ code {
     monospace;
 }
 .organizationCards {
-  width: 1300px;
+  width: 130vh;
   margin-left: 100px;
   margin-top: 20px;
   color: violet;
 }
 .MainOrganizationCards {
-  width: 1600px;
+  width: 160vh;
   margin-left: 170px;
   margin-top: 20px;
   background-color: #00c0d8;
