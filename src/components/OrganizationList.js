@@ -8,12 +8,12 @@ const Organization = () => {
   const [organization, setOrganization] = useState([]);
   const [allOrganizations, setallOrganizations] = useState([])
   useEffect(() => {
-    fetch("https://api.jsonbin.io/v3/b/63d0df29ebd26539d06758b6")
+    fetch("https://petflix-api.onrender.com/organizations")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.record.Organizations);
-        setallOrganizations(data.record.organizations)
-        setOrganization(data.record.organizations);
+        console.log(data.Organizations);
+        setallOrganizations(data.organizations)
+        setOrganization(data.organizations);
 
       });
   }, []);

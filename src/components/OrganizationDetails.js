@@ -8,12 +8,12 @@ function OrganizationDetails() {
  const [isLoading, setIsLoading] = useState(true);
  const [organization, setOrganization] = useState([]);
  useEffect(() => {
-   fetch("https://api.jsonbin.io/v3/b/63d0df29ebd26539d06758b6")
+   fetch("https://petflix-api.onrender.com/organizations")
      .then((res) => {
        return res.json();
      })
      .then((data) => {
-       setOrganization(data.record.organizations);
+       setOrganization(data.organizations);
        setIsLoading(false);
      });
  }, []);
@@ -267,7 +267,7 @@ style={{
              </div>
            </table>
          </div>
-       </div> 
+       </div>
      </div>
    );
  };
