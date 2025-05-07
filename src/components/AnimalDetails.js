@@ -35,13 +35,14 @@ function AnimalDetails() {
   } = animal;
 
   return (
-    <div className="flex justify-center h-full my-5 w-full">
+    <div className="animal flex justify-center h-full my-5 w-full">
       {isLoading ? (
         <p>Loading ....</p>
       ) : (
         <>
           {animal && (
-            <div className="rounded-lg shadow-lg bg-gray-200 w-1/2">
+            <div className="
+             rounded-lg shadow-lg bg-gray-200 w-1/2 ">
               <img
                 src={
                   photos?.length === 0
@@ -62,7 +63,7 @@ function AnimalDetails() {
                 <p>Gender: {gender}</p>
                 <p>House trained: {attributes?.house_trained ? "Yes" : "No"}</p>
               </div>
-              
+
                 <div className="mt-2">
                 <h3 className="text-gray-600 text-2xl font-medium mb-2 border border-b-gray-300 w-full">
                   About {name}
@@ -80,8 +81,8 @@ function AnimalDetails() {
                   {contact?.address?.city} City
                 </p>
                 </div>
-               
-                
+
+
                 <div className="flex items-center gap-2">
                 <img
                        className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 h-10"
