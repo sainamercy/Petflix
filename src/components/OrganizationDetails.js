@@ -98,13 +98,13 @@ function OrganizationDetails() {
              <div className="mb-4">
                <tbody>
                  <tr className=" bg-white border-b w-80">
-                   <div className="mb-5 grid grid-cols-2  gap-2 items-center">
+                   <div className="mb-5 grid grid-cols-2  items-center">
                      <img
                        className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 h-10"
                        src="https://img.icons8.com/ios-filled/512/gmail-new.png"
                        alt={organization.name + " logo"}
                      ></img>
-                     <td className=" py-4 whitespace-nowrap font-medium text-gray-900 text-xx">
+                     <td className=" py-4  font-medium text-gray-900  ">
                        {organization.email}
                      </td>{" "}
                    </div>
@@ -141,8 +141,8 @@ function OrganizationDetails() {
        <div className=" mt-12 ">
          <div className="discover block p-6 rounded-lg shadow-lg bg-white ">
            <h5
-             className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-gray-900 text-4xl leading-tight font-medium ml-10 mb-2"
-             style={{ lineHeight: "3.5" }}
+             className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-gray-900 text-xl leading-tight font-medium ml-10 mb-2"
+             style={{ lineHeight: "3." }}
            >
              Discover the Joy of Adopting a Pet with Our Organization
            </h5>
@@ -168,19 +168,8 @@ style={{
                From providing medical care and vaccinations to behavior
                training and socialization, we go above and beyond to prepare
                our pets for their forever homes. We also believe in matching
-               the right pet with the right person. That's why we take the time
-               to get to know each of our adopters, and make sure they are
-               prepared for the responsibility and commitment of pet ownership.
-               We want to make sure that every adoption is a success and that
-               both the pet and the adopter are happy. We have a wide variety
-               of pets available for adoption, from dogs and cats to small
-               animals such as rabbits and guinea pigs. All our animals are
-               spayed or neutered, microchipped and have all necessary
-               vaccinations. We also provide post-adoption support, so if you
-               need any help or advice after adopting a pet, we will be there
-               for you. Visit our website today and browse through our adorable
-               adoptable animals. You might just find the perfect companion to
-               bring into your life and home.
+               the right pet with the right person.
+
              </p>
            </p>
          </div>
@@ -199,7 +188,7 @@ style={{
                        src="https://img.icons8.com/ios-filled/512/calendar.png"
                        alt={organization.name + " logo"}
                      ></img>
-                     <td className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 whitespace-nowrap text-left font-medium text-gray-900 text-xl">
+                     <td className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 whitespace-nowrap font-medium text-gray-900 text-xl">
                        Weekly hours: 10:00am - 4:00pm
                      </td>{" "}
                    </div>
@@ -207,8 +196,8 @@ style={{
                </tbody>
 
 
-          <tbody>
-                 <tr className=" bg-white border-b w-80">
+          <tbody >
+                 <tr className=" bg-white border-b ">
                    <td
                      style={{ letterSpacing: "1px", lineHeight: "2.5" }}
                      className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300  py-4"

@@ -14,54 +14,52 @@ code {
     monospace;
 }
 .organizationCards {
-  width: 1300px;
+  width: 130vh;
   margin-left: 100px;
   margin-top: 20px;
   color: violet;
 }
 .MainOrganizationCards {
-  width: 1600px;
+  width: 160vh;
   margin-left: 170px;
   margin-top: 20px;
   background-color: #00c0d8;
 }
 .individualCards {
-  width: 1680px;
+  width: 190vh;
   height: 350px;
-  margin-left: 100px;
+  margin-left: 30px;
   margin-top: 60px;
 }
-.SecondColumn {
-  position: relative;
-  z-index: 10;
-  left: 30px;
-  bottom: 20px;
-  right: 0;
-}
+
 .firstColumn {
   position: relative;
   z-index: 10;
-  right: 200px;
-  width: 400px;
+  right: 20vh;
+  width: 70vh;
 }
 .discover {
-  position: relative;
-  width: 1150px;
+  width: 90vh;
   top: 50px;
-  margin-left: 20px;
+  margin-left:15vh;
+}
+.animal{
+margin-bottom: 50vh;
+}
+.animacard{
+  height: 140vh;
 }
 .moreInfo {
-  width: 550px;
-  margin-left: 20px;
-  height: 570px;
+  width: 70vh;
+  height: 70vh;
   position: relative;
-  z-index: 10;
+margin-top: 14vh;
   bottom: 650px;
-  left: 1200px;
+  left: 120vh;
 }
 .WorkingHours {
   position: relative;
-  margin-right: 200px;
+
   z-index: 10;
   font-size: large;
 }
